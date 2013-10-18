@@ -119,35 +119,15 @@
 }
 
 
-- (NSString *)formatDateFromTweetObject:(SPZTweet *)theTweet
-{
-    NSString *formattedDate = [[NSString alloc] init];
-    
-    // Format the date for presentation in the app
-    // 1. Map the date format from the data feed
-    // 2. Create a date object from the data string
-    // 3. Convert that date into a string for display
-    [dateFormatterJSON setDateFormat:@"eee MMM dd HH:mm:ss ZZZZ yyyy"];  // 1
-    NSDate *tweetDate = [dateFormatterJSON dateFromString:theTweet.tweetDate];  // 2
-    [dateFormatterDisplay setDateFormat:@"MMMM dd, yyyy"];  // 3
-    
-    formattedDate = [dateFormatterDisplay stringFromDate:tweetDate];
-    
-    return formattedDate;
-    
-}
-
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // 1. Set the value for selectedRow
-    // 2. Remove tint from cell after select
-    // 3. Perform segue to detail view
-    // 4. Added a TestFlight Checkpoint
+    // 2. Perform segue to detail view
+    // 3. Added a TestFlight Checkpoint
     selectedRow = indexPath.row;  // 1
-    [self.tableView deselectRowAtIndexPath:indexPath animated:YES];  // 2
-    [self performSegueWithIdentifier:@"toTweetDetail" sender:self];  // 3
-    [TestFlight passCheckpoint:@"Segue to Detail View"];
+    [self performSegueWithIdentifier:@"toTweetDetail" sender:self];  // 2
+    [TestFlight passCheckpoint:@"Segue to Detail View"];  // 3
     
 }
 
@@ -164,9 +144,9 @@
 #pragma mark - Fetch Twitter Data
 - (void)fetchTwitterData
 {
-    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"Internet"]) {
-        return;
-    }
+//    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"Internet"]) {
+//        return;
+//    }
     
     // Create an account object of type ACAccountStore
     ACAccountStore *account = [[ACAccountStore alloc] init];
@@ -244,6 +224,26 @@
      }];
 }
 
+
+#pragma mark - Supporting Methods
+- (NSString *)formatDateFromTweetObject:(SPZTweet *)theTweet
+{
+    NSString *formattedDate = [[NSString alloc] init];
+    
+    // Format the date for presentation in the app
+    // 1. Map the date format from the data feed
+    // 2. Create a date object from the data string
+    // 3. Convert that date into a string for display
+    [dateFormatterJSON setDateFormat:@"eee MMM dd HH:mm:ss ZZZZ yyyy"];  // 1
+    NSDate *tweetDate = [dateFormatterJSON dateFromString:theTweet.tweetDate];  // 2
+    [dateFormatterDisplay setDateFormat:@"MMMM dd, yyyy"];  // 3
+    
+    formattedDate = [dateFormatterDisplay stringFromDate:tweetDate];
+    
+    return formattedDate;
+    
+}
+
 - (void)refreshTwitterFeed
 {
     [self fetchTwitterData];
@@ -253,7 +253,6 @@
 }
 
 
-#pragma mark - LISTEN for Notifications
 - (void)listenForNotifications
 {
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -263,7 +262,6 @@
 }
 
 
-#pragma mark - NOTIFICATION Received
 - (void)getProfileImage:(NSNotification *)note
 {
     // Load the image in the table once it is downloaded
