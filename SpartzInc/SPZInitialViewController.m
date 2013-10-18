@@ -39,6 +39,13 @@
     [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
+// Set status bar color to light
+// Must do it in this view controller because the navigation bar is hidden
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 
 #pragma mark - REACHABILITY Methods
 - (void)checkForInternet
