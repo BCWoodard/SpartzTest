@@ -101,9 +101,12 @@
 
 - (void)showButtonAndSetUserDefaults
 {
-    [viewTweetsButton setHidden:NO];
-    [retryConnectionButton setHidden:YES];
-    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"Internet"];
+    // 1. Show the button to segue to list view
+    // 2. Hide the retry connection button
+    // 3. Set user default to YES
+    [viewTweetsButton setHidden:NO];  // 1
+    [retryConnectionButton setHidden:YES];  // 2
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"Internet"];  // 3
 }
 
 
