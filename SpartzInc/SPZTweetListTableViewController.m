@@ -43,7 +43,7 @@
 {
     // Alloc & init
     // 1. dateFormatterJSON - format the date retrieved from the JSON
-    // 2. dateFormatterTweet - format the date for display in the app
+    // 2. dateFormatterDisplay - format the date for display in the app
     dateFormatterJSON = [[NSDateFormatter alloc] init];  // 1
     dateFormatterDisplay = [[NSDateFormatter alloc] init];  // 2
     
