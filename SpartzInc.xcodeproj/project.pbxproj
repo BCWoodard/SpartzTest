@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A1AFD121811B9C400D4897D /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1AFD0E1811B9C400D4897D /* libTestFlight.a */; };
 		4A231343180F8EC7000504C4 /* SPZTweet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A231342180F8EC7000504C4 /* SPZTweet.m */; };
 		4A231345180FA508000504C4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A231344180FA508000504C4 /* QuartzCore.framework */; };
 		4A51A8FD181069660054F24E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A51A8FC181069660054F24E /* libz.dylib */; };
 		4A51A90018107BA40054F24E /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A51A8FF18107BA40054F24E /* Reachability.m */; };
-		4A51A90218107BC80054F24E /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A51A90118107BC80054F24E /* libTestFlight.a */; };
 		4A572F86180EF78C000E53AD /* SPZTweetListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A572F85180EF78C000E53AD /* SPZTweetListTableViewController.m */; };
 		4AEF2251180E2A92008958A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEF2250180E2A92008958A0 /* Foundation.framework */; };
 		4AEF2253180E2A92008958A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AEF2252180E2A92008958A0 /* CoreGraphics.framework */; };
@@ -51,16 +51,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A1AFD0E1811B9C400D4897D /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
+		4A1AFD0F1811B9C400D4897D /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
+		4A1AFD101811B9C400D4897D /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
+		4A1AFD111811B9C400D4897D /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		4A231341180F8EC7000504C4 /* SPZTweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPZTweet.h; sourceTree = "<group>"; };
 		4A231342180F8EC7000504C4 /* SPZTweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPZTweet.m; sourceTree = "<group>"; };
 		4A231344180FA508000504C4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		4A51A8F7181068870054F24E /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
-		4A51A8F8181068870054F24E /* TestFlight+AsyncLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+AsyncLogging.h"; sourceTree = "<group>"; };
-		4A51A8F9181068870054F24E /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		4A51A8FC181069660054F24E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		4A51A8FE18107BA40054F24E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		4A51A8FF18107BA40054F24E /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		4A51A90118107BC80054F24E /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		4A572F84180EF78C000E53AD /* SPZTweetListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPZTweetListTableViewController.h; sourceTree = "<group>"; };
 		4A572F85180EF78C000E53AD /* SPZTweetListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPZTweetListTableViewController.m; sourceTree = "<group>"; };
 		4AEF224D180E2A92008958A0 /* SpartzInc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpartzInc.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +106,7 @@
 				4A51A8FD181069660054F24E /* libz.dylib in Frameworks */,
 				4A231345180FA508000504C4 /* QuartzCore.framework in Frameworks */,
 				4AEF2295180E3997008958A0 /* Accounts.framework in Frameworks */,
-				4A51A90218107BC80054F24E /* libTestFlight.a in Frameworks */,
+				4A1AFD121811B9C400D4897D /* libTestFlight.a in Frameworks */,
 				4AEF2293180E36D5008958A0 /* Social.framework in Frameworks */,
 				4AEF2253180E2A92008958A0 /* CoreGraphics.framework in Frameworks */,
 				4AEF2255180E2A92008958A0 /* UIKit.framework in Frameworks */,
@@ -156,10 +156,10 @@
 		4A51A8F61810676B0054F24E /* TestFlight */ = {
 			isa = PBXGroup;
 			children = (
-				4A51A90118107BC80054F24E /* libTestFlight.a */,
-				4A51A8F7181068870054F24E /* TestFlight.h */,
-				4A51A8F8181068870054F24E /* TestFlight+AsyncLogging.h */,
-				4A51A8F9181068870054F24E /* TestFlight+ManualSessions.h */,
+				4A1AFD0E1811B9C400D4897D /* libTestFlight.a */,
+				4A1AFD0F1811B9C400D4897D /* TestFlight.h */,
+				4A1AFD101811B9C400D4897D /* TestFlight+AsyncLogging.h */,
+				4A1AFD111811B9C400D4897D /* TestFlight+ManualSessions.h */,
 			);
 			name = TestFlight;
 			path = SpartzInc;
@@ -518,6 +518,7 @@
 					"$(inherited)",
 					/Users/brad_woodard/Desktop/SpartzInc,
 					/Users/brad_woodard/Desktop/SpartzInc/SpartzInc,
+					/Users/brad_woodard/Desktop/SpartzTest/SpartzInc,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F941316B-2DC1-419B-956B-E96C8DAEF24D";
@@ -539,6 +540,7 @@
 					"$(inherited)",
 					/Users/brad_woodard/Desktop/SpartzInc,
 					/Users/brad_woodard/Desktop/SpartzInc/SpartzInc,
+					/Users/brad_woodard/Desktop/SpartzTest/SpartzInc,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "F941316B-2DC1-419B-956B-E96C8DAEF24D";
