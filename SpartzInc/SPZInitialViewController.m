@@ -39,12 +39,6 @@
     [self.navigationController setNavigationBarHidden:YES animated:NO];
 }
 
-// Set the status bar (time, battery, etc.) color
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
-
 
 #pragma mark - REACHABILITY Methods
 - (void)checkForInternet
