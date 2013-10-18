@@ -268,7 +268,7 @@
 {
     // Load the image in the table once it is downloaded
     // 1. Create an instance of a tweet object
-    // 2. Get the index of the object in our array
+    // 2. Get the index of that tweet object from our array
     // 3. Need an indexPath since reloadRowsAtIndexPaths: takes an array as its argument
     // 4. Reload the row and display the new image
     SPZTweet *tweet = note.object;  // 1
