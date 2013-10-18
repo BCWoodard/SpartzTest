@@ -28,10 +28,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    
+    // I like the "chevron-only" look for navigation so remove text from the "Back" button.
     [self.navigationItem.backBarButtonItem setTitle:@""];
 }
 
-// Status Bar Color
+// I have a darker nav bar so set the status bar text color to light
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
     return UIStatusBarStyleLightContent;
