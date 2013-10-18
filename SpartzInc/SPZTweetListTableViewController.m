@@ -144,9 +144,9 @@
 #pragma mark - Fetch Twitter Data
 - (void)fetchTwitterData
 {
-//    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"Internet"]) {
-//        return;
-//    }
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"Internet"]) {
+        return;
+    }
     
     // Create an account object of type ACAccountStore
     ACAccountStore *account = [[ACAccountStore alloc] init];
