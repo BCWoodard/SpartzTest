@@ -17,7 +17,7 @@
     // Override point for customization after application launch.
     
     // TestFlight Info
-    [TestFlight takeOff:@"ed232c7c-8ab2-4f46-9b4a-99b195c6c70c"];
+    [TestFlight takeOff:@"cfbc3e950c5afe94bcdc8bd14935e6a8_Mjg4MDU0MjAxMy0xMC0xOCAxNDozMjoxNC4wOTIxNTk"];
     
     // NavigationBar customizations
     [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x333333)];
